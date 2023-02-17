@@ -16,10 +16,6 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:log-extension.putLog",
-    "onCommand:log-extension.updateLogs"
-  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
