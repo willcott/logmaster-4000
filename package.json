@@ -1,10 +1,16 @@
 {
   "name": "logmaster-4000",
   "displayName": "LOGMASTER 4000",
-  "description": "log",
+  "author": "Will Cottingham",
+  "description": "For adding console logs quickly.",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": "^1.75.0",
+    "node": "18.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willcott/logmaster-4000.git"
   },
   "icon": "logmaster4000.png",
   "categories": [
@@ -39,6 +45,7 @@
       }
     ]
   },
+
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
