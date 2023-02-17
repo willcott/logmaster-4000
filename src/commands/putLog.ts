@@ -1,6 +1,7 @@
 import { commands, Position, Range, TextEditorEdit, window } from "vscode";
 
 export const putLog = () => {
+
   const editor = window.activeTextEditor;
   if (!editor) {
     return;
@@ -11,8 +12,6 @@ export const putLog = () => {
   );
 
   if (sortedSelections.length > 0) {
-    console.log("selections", editor.selections);
-
     const edits: ((editBuilder: TextEditorEdit) => void)[] = [];
 
     editor.selections.forEach((selection) => {
