@@ -20,22 +20,22 @@
   "contributes": {
     "commands": [
       {
-        "command": "log-extension.putLog",
+        "command": "logmaster-4000.putLog",
         "title": "Put Log"
       },
       {
-        "command": "log-extension.updateLogs",
+        "command": "logmaster-4000updateLogs",
         "title": "Update Logs"
       }
     ],
     "keybindings": [
       {
-        "command": "log-extension.putLog",
+        "command": "logmaster-4000.putLog",
         "key": "ctrl+l",
         "mac": "cmd+l"
       },
       {
-        "command": "log-extension.updateLogs",
+        "command": "logmaster-4000.updateLogs",
         "key": "ctrl+u",
         "mac": "cmd+u"
       }

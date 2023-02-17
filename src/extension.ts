@@ -4,12 +4,12 @@ import { updateLogs } from "./commands/updateLogs";
 
 export function activate(context: vscode.ExtensionContext) {
   let putDisposable = vscode.commands.registerCommand(
-    "log-extension.putLog",
+    "logmaster-4000.putLog",
     putLog
   );
 
   let updateDisposable = vscode.commands.registerCommand(
-    "log-extension.updateLogs",
+    "logmaster-4000.updateLogs",
     updateLogs
   );
 
