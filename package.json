@@ -10,14 +10,19 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:log-extension.helloWorld"
+    "onCommand:log-extension.putLog",
+    "onCommand:log-extension.updateLogs"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "log-extension.helloWorld",
-        "title": "Hello World"
+        "command": "log-extension.putLog",
+        "title": "Put Log"
+      },
+      {
+        "command": "log-extension.updateLogs",
+        "title": "Update Logs"
       }
     ]
   },
