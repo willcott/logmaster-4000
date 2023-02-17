@@ -3,8 +3,6 @@ import { putLog } from "./commands/putLog";
 import { updateLogs } from "./commands/updateLogs";
 
 export function activate(context: vscode.ExtensionContext) {
-  console.log('Congratulations, your extension "log-extension" is now active!');
-
   let putDisposable = vscode.commands.registerCommand(
     "log-extension.putLog",
     putLog

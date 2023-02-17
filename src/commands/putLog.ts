@@ -1,5 +1,5 @@
 import { basename } from "path";
-import { commands, Position, Range, TextEditorEdit, window } from "vscode";
+import { Position, Range, TextEditorEdit, window } from "vscode";
 
 const allowedFileTypes = ["js", "ts", "jsx", "tsx"];
 

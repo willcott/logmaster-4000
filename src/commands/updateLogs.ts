@@ -16,7 +16,7 @@ export const updateLogs = () => {
 
   const selections: Selection[] = [];
 
-  matches.forEach((match, index) => {
+  matches.forEach((match) => {
     if (!match) {
       return;
     }

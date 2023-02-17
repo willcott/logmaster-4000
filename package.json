@@ -28,16 +28,16 @@
     ],
     "keybindings": [
       {
-          "command": "log-extension.putLog",
-          "key": "ctrl+l",
-          "mac": "cmd+l"
+        "command": "log-extension.putLog",
+        "key": "ctrl+l",
+        "mac": "cmd+l"
       },
       {
-          "command": "log-extension.updateLogs",
-          "key": "ctrl+u",
-          "mac": "cmd+u"
+        "command": "log-extension.updateLogs",
+        "key": "ctrl+u",
+        "mac": "cmd+u"
       }
-  ]
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
