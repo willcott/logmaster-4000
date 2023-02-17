@@ -1,11 +1,12 @@
 {
-  "name": "log-extension",
-  "displayName": "log-extension",
+  "name": "logmaster-4000",
+  "displayName": "LOGMASTER 4000",
   "description": "log",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.75.0"
   },
+  "icon": "logmaster4000.png",
   "categories": [
     "Other"
   ],
@@ -24,7 +25,19 @@
         "command": "log-extension.updateLogs",
         "title": "Update Logs"
       }
-    ]
+    ],
+    "keybindings": [
+      {
+          "command": "log-extension.putLog",
+          "key": "ctrl+l",
+          "mac": "cmd+l"
+      },
+      {
+          "command": "log-extension.updateLogs",
+          "key": "ctrl+u",
+          "mac": "cmd+u"
+      }
+  ]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
