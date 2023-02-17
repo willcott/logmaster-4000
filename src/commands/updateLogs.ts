@@ -1,7 +1,6 @@
 import { Selection, window } from "vscode";
 
 export const updateLogs = () => {
-  window.showInformationMessage("Updating logs!");
   const editor = window.activeTextEditor;
   if (!editor) {
     return;
