@@ -27,9 +27,13 @@ export const putLog = () => {
 
     editor.selections.forEach((selection) => {
       if (selection.isEmpty) {
+        const indentAmmount = editor.document.lineAt(
+          selection.start.line
+        ).firstNonWhitespaceCharacterIndex;
+
         const insertPosition = new Position(selection.start.line, 0);
 
-        const editString = `console.log('[🪵 🤖][${fileName}][Line: ${
+        const editString = `${' '.repeat(indentAmmount)}console.log('[🪵 🤖][${fileName}][Line: ${
           insertPosition.line + 1 + edits.length
         }]');\n`;
 
@@ -46,9 +50,13 @@ export const putLog = () => {
 
       const isLastLine = editor.document.lineCount === selection.start.line + 1;
 
+      const indentAmmount = editor.document.lineAt(
+        selection.start.line
+      ).firstNonWhitespaceCharacterIndex;   
+
       const editString = `${
         isLastLine ? "\n" : ""
-      }console.log(\`[🪵 🤖][${fileName}][Line: ${
+      }${' '.repeat(indentAmmount)}console.log(\`[🪵 🤖][${fileName}][Line: ${
         insertPosition.line + 1 + edits.length
       }] - ${selctedWord} = \$\{${selctedWord}\}\`);\n`;
 
